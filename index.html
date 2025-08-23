@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prashik Bhalerao - Data Engineer Portfolio</title>
+    <meta name="description" content="Prashik Bhalerao - Data Engineer skilled in Python, SQL, PySpark, AWS, and Generative AI. Helping businesses transform data into insights.">
+    <meta name="keywords" content="Data Engineer, Python, SQL, PySpark, AWS, Generative AI, Data Analytics, Big Data">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Prashik Bhalerao - Data Engineer Portfolio">
+    <meta property="og:description" content="Data Engineer skilled in Python, SQL, PySpark, AWS, and Generative AI. Helping businesses transform data into insights.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:title" content="Prashik Bhalerao - Data Engineer Portfolio">
+    <meta name="twitter:description" content="Data Engineer skilled in Python, SQL, PySpark, AWS, and Generative AI. Helping businesses transform data into insights.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #3b82f6;
+            --secondary-color: #1e293b;
+            --accent-color: #60a5fa;
+            --bg-dark: #0f172a;
+            --bg-darker: #020617;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #64748b;
+            --border-color: #334155;
+        }
+    }
+
+    @layer base {
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105;
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .btn-secondary {
+            @apply px-6 py-3 rounded-lg font-semibold border-2 transition-all duration-300 hover:scale-105;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .card-dark {
+            @apply p-6 rounded-xl border transition-all duration-300 hover:scale-105;
+            background: var(--secondary-color);
+            border-color: var(--border-color);
+        }
+        
+        .skill-tag {
+            @apply px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:scale-105;
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--accent-color);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .slide-in-right {
+            animation: slideInRight 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateX(50px);
+        }
+    }
+
+    @layer utilities {
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Navigation.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/Skills.js"></script>
+    <script type="text/babel" src="components/Projects.js"></script>
+    <script type="text/babel" src="components/Education.js"></script>
+    <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
